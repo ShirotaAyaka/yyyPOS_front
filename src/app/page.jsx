@@ -8,7 +8,7 @@ export default function Home() {
 
   const handleCheck = async () =>{
     try{
-      const res = await fetch('http://127.0.0.1:8000/check');
+      const res = await fetch('http://tech0-gen-7-step4-studentwebapp-pos-32-bddkf5emhxaphecs.eastus-01.azurewebsites.net/check');
       const data = await res.json();
       setMessage(data.message);
     }catch(error){
