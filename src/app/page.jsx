@@ -88,10 +88,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-center items-center gap-4">
-    <h1>Hello world</h1>
-    <button className="btn btn-neutral w-48" onClick={handleCheck}>check</button>
-    {message && <p>受信メッセージ: {message}</p>}
-
     <p className="text-2xl mt-20">YYY_POSアプリ</p>
 
     <input
@@ -127,7 +123,7 @@ export default function Home() {
         )}
           </div>
 
-      <button className="btn btn-secondary w-80 max-w-xs mb-2" onClick={handlePurchase}>購入</button>
+      <button className="btn btn-secondary w-80 max-w-xs mb-5" onClick={handlePurchase}>購入</button>
 
       {/* 合計金額を表示 */}
       {totalAmount !== null && (
